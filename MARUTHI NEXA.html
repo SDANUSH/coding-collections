@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARUTHI NEXA</title>
+    <link rel="icon" type="favicon" href="favicon-32x32.png">
+    <style>
+        ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float:center;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffffff;
+  color: #000000;
+  transition:0.5s;
+  
+}
+
+.active:hover{
+  color: #000000;
+  transition:0.5s;
+}
+.active {
+  background-color: rgb(255, 255, 255);
+  border-color: 1px rgb(0, 0, 0);
+  color: #000000;
+}
+.stick{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;}
+  .video-view {
+        position: relative;
+        width: 300px;
+        height: 100px;
+      }
+      
+      .video-view .video {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        background-color: #ccc;
+        
+      }
+      
+      .video-view .video-content {
+        position: absolute;
+        bottom: 0px;
+        margin-left: 45%;
+        margin-top: 50%;
+        padding: 20px;
+        width: max-content;
+
+      }
+      button{
+        padding: 20px;
+         padding: left 20px;;
+        background-color:rgb(0, 86, 223);
+        color:rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 10px;
+        border-color: aliceblue;
+        text-shadow: 2px 2px 4px #000000;
+        margin-top: 100px;
+      }
+      * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #ffffff;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+nav {
+        color: rgb(255, 255, 255);
+        border:2px white;
+        margin-top: 2%;
+        margin-left: 25%;
+        position: relative;
+        float: CENTER;
+        width: 50%;
+        height: 590px; 
+        background-color: rgb(255, 255, 255);
+        padding: 20px;}
+header{
+ 
+  color: rgba(255, 255, 255, 0.742);
+        border:2px rgb(255, 255, 255);
+        margin-top: 8px;
+        margin-left: 1%;
+        position: relative;
+  float:left;
+  width: 50%;
+  height: 90px; 
+  background-color: rgb(255, 255, 255);
+  padding: 20px;}
+
+ .b{
+  width: 70%;
+  color: #000000;
+  border: 2px rgb(255, 255, 255);
+  background-color: #ffffff;
+  position:-webkit-sticky;
+  margin-top: 1000px;
+  float: center;
+  margin-bottom: 0px;
+  padding: 20px;
+ }
+
+.caption {
+  font-size:45px;
+  text-decoration:double  underline;
+}
+ .maruthi{
+  border: 1px black;
+  padding: 50px;
+  width: 100%;
+ }
+  .container {
+  position: relative;
+  width: 50%;
+ padding: 60px;
+ border-radius: 5px;
+
+}
+
+.image {
+  display: inline-block;
+ position: relative;
+ border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.603);
+  overflow: hidden;
+  width: 180%;
+  height: 0;
+  transition:.5s ease-in-out;
+}
+
+.container:hover .overlay {
+  height: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.text {
+  text-decoration: NONE;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ span{
+  background-color: #00000088;
+ }
+ .performance{
+  font-size: 50px;
+color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+ text-decoration:double underline ;
+
+ }
+ .perform:hover{
+ height: 700px;
+ width: 700px;
+ }
+ .b1{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -1060px;
+   margin-left: 170px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b1:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b2{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -1060px;
+   margin-left: 780px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b2:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b3{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -1060px;
+   margin-left: 1300px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b3:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b4{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -580px;
+   margin-left: 170px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b4:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b5{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -580px;
+   margin-left: 780px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b5:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b6{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -580px;
+   margin-left:1300px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b6:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b7{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -120px;
+   margin-left:170px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b7:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b8{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -120px;
+   margin-left: 780px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b8:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .b9{
+  position: absolute;
+  display: inline;
+  width: 220px;
+  padding: 25px;
+   margin-top: -120px;
+   margin-left:1300px;
+   background-color: rgb(255, 255, 255);
+   font-size: larger;
+   color: #000000;
+   border-color: #000000;
+   text-decoration: none;
+ }
+ .b9:hover{
+  background-color: black;
+  color: #bbb;
+  transition: 1s;
+ }
+ .tx{
+  text-decoration:none;
+ }
+ .end{
+  width: 100%;
+  height: 2000px;
+  margin-left: 0;
+  margin-top: -20;
+  background:linear-gradient(to bottom, #5757579f 0%, #ffffffcd 100%)
+  
+
+ }
+    </style>
+</head>
+<body>
+  <header>
+<table>
+  <tr>
+  <th><a href=""><img src="maruti-logo-new.webp" alt="error" style="height:35px;width: 330px;"></a></th>
+  <th>     daniygudfbauoesygbfuyfvusfrfcevejvfefyberhjcfberoygerufeuefvbuayfbukhfvbsudjfsviiabgy4ugfbewknfnrihefcberlk gfrogyijwvbdfukewvuyafflfgbasjdfbusugf  sgrdfhdfg</th>
+  <th><a href="https://www.nexaexperience.com/"><img src="call-icon.webp" alt="error" style="height: 30px;width: 30px;"></a></th>
+  <th>assf</th>
+  <th><a href="https://www.nexaexperience.com/login"><img src="user-login.webp" alt="error" style="height: 30px;width: 30px;"></a></th>
+  <th>assf</th>
+  <th><a href="https://api.whatsapp.com/message/5WKJC55A4JTKH1?autoload=1&app_absent=0"><img src="Digital_Glyph_Black.png" alt="error" style="height: 30px;width: 30px;"></a></th>
+  <th>assf</th>
+  <th><A href="https://www.marutisuzuki.com/?_gl=1*1btqgnm*_ga*MTc3NjQyODc0NC4xNjk2NDE0MjEz*_ga_RM5D6V43B5*MTY5NjgzODg5NC4xMS4wLjE2OTY4Mzg4OTQuNjAuMC4w&_ga=2.178265060.1576553142.1696838895-1776428744.1696414213&_gac=1.119809402.1696326410.CjwKCAjw9-6oBhBaEiwAHv1QvA1q5L8ylaFPAgcaWoXjiCGUuT023n-b1gdOBgYAfCnuieNSc9xILRoCZpUQAvD_BwE"><img src="Sitar-santoor-sarod-and-veena-Know-the-differences-between-them-how-they-are-different-2.webp" alt="error" style="height: 25px;width: 150px;"></A></th>
+  </tr>
+</table>
+  </header>
+   
+        <ul align="center" class="stick">  
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#">NEXA CARS</a></li>
+            <li><a href="https://www.nexaexperience.com/configurator">CONFIGERATOR</a></li>
+            <li><a href="https://www.nexaexperience.com/">BUYERS GUIDE</a></li>
+            <li><a href="https://www.nexaexperience.com/book-test-drive">TEST DRIVE</a></li>
+            <li><a href="#">LOCATOR</a></li>
+            <li><a href="https://www.nexaexperience.com/e-booking?login=0&_gl=1*5a68e3*_ga*MTc3NjQyODc0NC4xNjk2NDE0MjEz*_ga_RM5D6V43B5*MTY5Njg0MTM3Ny4xMi4xLjE2OTY4NDE3MTEuMTMuMC4w&_ga=2.144145653.1576553142.1696838895-1776428744.1696414213&_gac=1.259056376.1696326410.CjwKCAjw9-6oBhBaEiwAHv1QvA1q5L8ylaFPAgcaWoXjiCGUuT023n-b1gdOBgYAfCnuieNSc9xILRoCZpUQAvD_BwE">E-BOOK NOW</a></li>
+            <li><a href="https://www.nexaexperience.com/nexaworld">NEXA WORLD</a></li>
+            <li><a href="https://www.nexaexperience.com/maruti-suzuki-car-finance">SMART FINANCE</a></li>
+            <li><a href="#">OUR PHILOSOPHY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#"><img src="download.png" class="image" width="25" height="25" ></a></li>
+        </ul>
+    
+    <div class="video-view">
+      <video width="1900PX" height="1000PX" controls>
+        <source src="FRONX banner Video mp4.mp4" type="video/mp4">
+       </video>
+      <div class="video-content">
+        <button WIDTH="20px">BOOK A SHOWROOM VISIT</button>
+      </div>
+    </div>
+   
+      <table align="center"  class="b">
+      <tr>
+        <th><a href="https://www.nexaexperience.com/showroom-locator"><img src="dealer.webp" alt="de" height="100PX" width="100PX"><p class="tx">LOCATE A DEALER</p></a> </th>
+        <th><a href="https://www.nexaexperience.com/book-test-drive"><img src="Test Drive.webp" alt="de" height="100PX" width="100PX"><p class="tx">BOOK A TEST DRIVE</p></a></th>
+        <th><a href="https://www.nexaexperience.com/configurator"><img src="Config.webp" alt="de" height="100PX" width="100PX"><p class="tx">CONFIGERATOR</p></a></th>
+        <th><a href="https://www.nexaexperience.com/e-booking"><img src="Ebook (2).webp" alt="de" height="100PX" width="100PX"><p class="tx">E-BOOK NOW</p></a></th>
+        <th><a href="https://www.nexaexperience.com/maruti-suzuki-car-finance"><img src="Maruti Suzuki Finance.webp" alt="de" height="100PX" width="100PX"><p class="tx">CHECK LOAN OFFERS</p></a></th>
+        <th><a href="https://www.nexaexperience.com/book-showroom-visit"><img src="Showroom Visit (1).webp" alt="de" height="100PX" width="100PX"><p class="tx">SHOWROOM VISIT</p></a></th>
+      </tr>
+    </table>
+   
+    <nav>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="Copy of 500x305_new update.webp" style="width:100%">
+        <div class="text">PERFORMANCE</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="s-cross-new.webp" style="width:100%">
+        <div class="text">BOLD DESIGN</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="2-Baleno.webp" style="width:100%">
+        <div class="text">SOPHISTICATED POWER</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+      </div>
+
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script></nav>
+      <p align="center" class="caption"><b>NEXA CARS</b></p>
+      <table align="center"class="maruthi">
+        <tr>
+          <td><a href="#"><div class="container">
+            <img src="Maruti_YDA_Website_Coming-Soon_370x252 C webp.webp" class="image" width="400" height="350" >
+                 <div class="overlay">
+                   <div class="text">MARUTHI INVICTO</div>
+                 </div>
+               </div>
+              </a>
+              </td>
+            <td><a href="#"><div class="container">
+           <img src="FRONX-Color-1500x700-OPULENT_RED.webp"alt="Avatar" class="image" width="430" height="270">
+                <div class="overlay">
+                  <div class="text">MARUTHI FRONX</div>
+                </div></div>
+              </div></a></td>
+              <td><a href="#"><div class="container">
+                <img src="Jimmy-370x252-withbg webp.webp" class="image"  width="400" height="350" >
+                     <div class="overlay">
+                       <div class="text">MARUTHI JIMMY</div>
+                     </div>
+                   </div>
+                   </a>
+                  </td>
+        </tr>
+        <tr>
+            <td><a href="#"><div class="container">
+                <img src="maruti-xl6-auburn-red.jpg" class="image"  width="400" height="350">
+                     <div class="overlay">
+                       <div class="text">MARUTHI XL6</div>
+                     </div>
+                   </div></a></td>
+                   <td><a href="#"><div class="container">
+                    <img src="OIP (1).jpeg"class="image" width="400" height="350">
+                         <div class="overlay">
+                           <div class="text">MARUTHI IGNIS</div>
+                         </div>
+                       </div></a></td>
+                       <td><a href="#"><div class="container">
+                        <img src="OIP.jpeg"class="image"  width="400" height="350">
+                             <div class="overlay">
+                               <div class="text">MARUTHI BALENO</div>
+                             </div></a>
+                           </div></td>
+        </tr>
+        <tr>
+          <td><a href="#"><div class="container">
+              <img src="ciazzz webp.webp" class="image"  width="400" height="350">
+                   <div class="overlay">
+                     <div class="text">MARUTHI CIAZ</div>
+                   </div>
+                 </div></a></td>
+                 <td><a href="#"><div class="container">
+                  <img src="OIP (2).jpeg"class="image" width="450" height="300">
+                       <div class="overlay">
+                         <div class="text">MARUTHI GRAND VITARA</div>
+                       </div>
+                     </div></a></td>
+                     <td><a href="#"><div class="container">
+                      <img src="BREZZA.jpg"class="image"  width="550" height="350">
+                           <div class="overlay">
+                             <div class="text">MARUTHI Brezza</div>
+                           </div></a>
+                         </div></td>
+      </tr>
+      </table>
+      <button class="b1">E-BOOK NOW</button>
+      <button class="b2">E-BOOK NOW</button>
+      <button class="b3">E-BOOK NOW</button>
+      <button class="b4">E-BOOK NOW</button>
+      <button class="b5">E-BOOK NOW</button>
+      <button class="b6">E-BOOK NOW</button>
+      <button class="b7">E-BOOK NOW</button>
+      <button class="b8">E-BOOK NOW</button>
+      <button class="b9">E-BOOK NOW</button>
+      <nav class="end">
+        <p ALIGN="CENTER" class="performance"><B>KEY FEATURES</B></p>
+    
+    <object data="FRONX Brochure.pdf" width="100%" height="1500px" aria-controls="hidden">
+      <p>Unable to display PDF file. <a href="FRONX Brochure.pdf">Download</a> instead.</p>
+    </object>
+      </nav>
+      </body>
+      </html>
+    

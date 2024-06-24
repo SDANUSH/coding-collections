@@ -1,0 +1,125 @@
+<html>   
+<head>   
+    <style>
+        body {
+            background-image: url("summer-spring-green-landscape-vector-illustration-hills-meadows-mountains-summer-spring-green-landscape-vector-illustration-144535702\ \(1\).webp");
+        }
+        .button{
+            margin-top: 10px;
+            margin-left:400px;
+            height: 40px;
+            width: 12px;
+            position: relative;
+            float: left;
+            display: inline-block;
+        }
+        .button1{
+            margin-top: 10px;
+            margin-left:400px;
+            height: 40px;
+            width: 12px;
+            position: relative;
+            float: left;
+            display: inline-block;
+            
+        }
+        .b1, .b5 {
+
+            height: 40px;
+            width: 127px;
+            background-image: url("Screenshot\ 2024-02-10\ 121621.jpg");
+        }
+        .b2, .b6 {
+            height: 40px;
+            width: 127px;
+            background-image: url("Screenshot\ 2024-02-10\ 121639.jpg");
+        }
+        .b3, .b7 {
+            height: 40px;
+            width: 127px;
+            background-image: url("Screenshot\ 2024-02-10\ 121649.jpg");
+        }
+        .b4, .b8 {
+            height: 40px;
+            width: 127px;
+            background-image: url("Screenshot\ 2024-02-10\ 121658.jpg");
+        }
+    </style>
+    <script type="text/javascript">
+        var img = null;   
+
+        function init(){    
+            img = document.getElementById('myimg');  
+            img.style.position = 'absolute';       
+            img.style.left = '50px';
+            img.style.top = '280px';      
+        }
+
+        function moveRight(){    
+            img.style.left = parseInt(img.style.left) + 50 + 'px';    
+        }   
+
+        function moveleft(){    
+            img.style.left = parseInt(img.style.left) - 50 + 'px';    
+        }
+
+        function moveup(){    
+            img.style.top = parseInt(img.style.top) - 50 + 'px';    
+        }
+
+        function movedown(){    
+            img.style.top = parseInt(img.style.top) + 50 + 'px';    
+        }
+
+        var img1 = null;   
+
+        function init1(){    
+            img1 = document.getElementById('myimg1');  
+            img1.style.position = 'absolute';       
+            img1.style.left = '20px';
+            img1.style.top = '50px';          
+        }       
+
+        function moveRight1(){    
+            img1.style.left = parseInt(img1.style.left) + 50 + 'px';    
+        }   
+
+        function moveleft1(){    
+            img1.style.left = parseInt(img1.style.left) - 50 + 'px';    
+        }
+
+        function moveup1(){    
+            img1.style.top = parseInt(img1.style.top) - 50 + 'px';    
+        }
+
+        function movedown1(){    
+            img1.style.top = parseInt(img1.style.top) + 50 + 'px';    
+        }
+
+        window.onload = function() {
+            init();
+            init1();
+        };    
+    </script>   
+</head>   
+<body> 
+    <img id="myimg" src="10-02-2024_11_27_13-removebg-preview.png" />   
+    <center><div class="button">
+
+   
+        <input class="b1" type="button" value=" " onclick="moveRight();" />  
+        <input class="b2" type="button" value=" " onclick="moveleft();" />  
+        <input class="b3" type="button" value=" " onclick="moveup();" />  
+        <input class="b4" type="button" value=" " onclick="movedown();" />  
+        </div>
+    </center>
+
+    <img id="myimg1" src="WhatsApp_Image_2024-02-10_at_19.11.06_c2c915f6-removebg-preview.png"/>   
+    <center><div class="button1"> 
+        <input class="b5" type="button" value=" " onclick="moveRight1();" />  
+        <input class="b6" type="button" value=" " onclick="moveleft1();" />  
+        <input class="b7" type="button" value=" " onclick="moveup1();" />  
+        <input class="b8" type="button" value=" " onclick="movedown1();" />  
+     </div></center>   
+</body>  
+</html>

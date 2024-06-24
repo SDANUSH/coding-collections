@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+var text="A computer is an electronic device that can receive, store, process, and output data. It operates under the control of instructions stored in its memory, and it can perform various tasks depending on the instructions given to it. Computers come in different forms, including personal computers (desktops, laptops), servers, mainframes, smartphones, tablets, and embedded systems in devices like cars and appliances. They typically consist of hardware components such as a central processing unit (CPU), memory (RAM), storage devices (hard drives, SSDs), input devices (keyboard, mouse, touchscreen), output devices (monitor, printer), and communication interfaces (network cards, USB ports). The software running on a computer includes operating systems, applications, and utilities that enable users to interact with the hardware and perform tasks such as browsing the internet, creating documents, playing games, and running various programs.";
+var pattern=/\o+/g;
+let result=text.match(pattern);
+document.getElementById("a").innerHTML=result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTRUMENT SHOP</title>
+    <link rel="icon" type="favicon" href="favicon-32x32.png">
+    <style>
+        body{
+            background-image:url("167560.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+           
+        }
+        h1{
+            color: rgb(255, 255, 255);
+  text-shadow: 5px 2px 4px rgb(0, 0, 0);
+            margin-top: 50px;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+            table,tr,td {
+                padding: 10px;
+                border-radius: 12px;
+                margin-left: 20px;
+                margin-right: 10px;
+                
+              
+  
+  color: rgb(0, 0, 0)
+  
+        }
+        table td:hover{
+            background-color: rgb(255, 255, 255);
+           
+            font-size: 20px;
+            
+        }
+       button {
+       
+        font-size: 25px;
+        width: 35%;
+         margin-left: 410px;    ;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 30px;
+        border-color: aliceblue;
+        text-shadow: 2px 2px 4px #000000;
+        
+       }
+       button:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+       }
+
+       nav {
+        color: rgb(255, 255, 255);
+        border:2px white;
+margin-left: 130px;
+  float:center;
+  width:80%;
+  height: 600px; 
+  background-color: rgba(0, 0, 0, 0.73);
+  padding: 20px;
+  
+  border-radius: 15px;
+}
+select{
+    width: 50%;
+   
+}
+      div{
+        color: rgb(255, 255, 255);
+        font-size:xx-large;
+      }
+      .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: inline-block;
+ position: relative;
+ 
+ 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff6b;
+  overflow: hidden;
+  width: 200%;
+  height: 0;
+  transition:.5s ease-in-out;
+}
+
+.container:hover .overlay {
+  height: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  left: 35%;
+   z-index: 999;
+  
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float:center;
+}
+
+li a:hover:not(.active) {
+  background-color: #000000;
+  
+}
+.active:hover{
+  color: #ffffff;
+  background-color: #000000;
+}
+.active {
+  background-color: rgb(0, 0, 0);
+  border-color: 1px rgb(255, 255, 255);
+  
+}
+.stick{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+.first{
+width: 440px;
+height: 100px;
+margin-top: 10px;
+}
+.sprite_face_shift {
+background: url("sprits.png");
+background-position:0 0;
+width: 50px;
+height: 50px;
+float: left;
+margin-top: 10px;
+display: inline-block;
+margin-right: 10px;
+transform: perspective(1000);
+transform-style: preserve-3d;
+transition: all 400ms ease;
+}
+.sprite_face_shift:hover {
+background: url("sprits.png");
+background-position: -1px -95px;
+width: 55px;
+height: 60px;
+margin-top: 10px;
+transform: rotate(0deg);
+}
+      .second{
+        width: 440px;  
+        height: 100px;
+      }
+      
+      .brand:hover{
+  transform:scaleX(1.2)
+  transform:scaley(1.2)
+      .sprite_face_shift_1{
+        background: url("download\ \(1\)\ \(7\).jpg");
+      }
+        width: 50px;
+        height: 50px;
+        float:left;
+        display: inline-block;
+        margin-top: 10px;
+        transform: perspective(1000);
+        transform-style: preserve-3d;
+        transition: all 400ms ease;
+        margin-bottom: 10px;
+        }
+        .sprite_face_shift_1:hover {
+        background: url("images\ \(3\).jpg");
+        
+        width: 50px;
+        height: 50px;
+        transform:scale3d(4);
+        }
+      MARQUEE{
+        color: rgb(255, 204, 0);
+        font-size: large;
+        background-color: BLACK;
+        position: sticky;
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body>  
+    <h1 ALIGN="center">Music Warehouse</h1>
+    <MARQUEE>GET 25% OFFER ON HBFC CREDIT CARD</MARQUEE>
+    <table class="a"   width="85%">
+        <ul align="center" class="stick">  
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#">bookings</a></li>
+            <li><a href="#">wish list</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">report</a></li>
+        </ul>
+    </table>
+  <table>
+    <tr>
+      <td><a href="https://www.flipkart.com/search?q=guitar&sid=ypu%2Cujd%2C7wz&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&as-pos=1&as-type=RECENT&suggestionId=guitar%7CAcoustic+Guitars&requestId=537b2caf-a372-45a9-80b6-664eef6478b1&as-searchtext=guitar"> <div class="container">
+        <img src="images (1).jpeg" class="image" width="300" height="350" >
+             <div class="overlay">
+               <div class="text">place order</div>
+             </div>
+           </div>
+           </a>
+          </td>
+          <td><a href="https://www.flipkart.com/search?q=piano&sid=ypu%2Cnvg%2Cxqg&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=RECENT&suggestionId=piano%7CMusical+Keyboards&requestId=4125f7b8-41f0-4438-a3ff-5879e5aae725&as-searchtext=piano"><div class="container">
+       <img src="grand-piano-indoors-theater-place-generative-ai_188544-7793.avif"Avatar" class="image"width="300" height="350" >
+            <div class="overlay">
+              <div class="text">place order</div>
+            </div>
+          </div></a></td>
+          <td><a href="https://www.flipkart.com/search?q=saxophone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><div class="container">
+            <img src="images (2).jpeg" class="image" width="300" height="350" >
+                 <div class="overlay">
+                   <div class="text">place order</div>
+                 </div>
+               </div>
+               </a>
+              </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.flipkart.com/veenai-veenaismall01-decorative-showpiece-6-cm/p/itme40c9905bc3ac?pid=SHIGT8APZCVUBTNY&lid=LSTSHIGT8APZCVUBTNYK72OBF&marketplace=FLIPKART&cmpid=content_showpiece-figurine_8965229628_gmc"><div class="container">
+            <img src="Sitar-santoor-sarod-and-veena-Know-the-differences-between-them-how-they-are-different-2.webp" class="image" width="300" height="350">
+                 <div class="overlay">
+                   <div class="text">place order</div>
+                 </div>
+               </div></a></td>
+               <td><a href="https://www.flipkart.com/search?q=violin&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><div class="container">
+                <img src="pngtree-d-rendering-of-a-solo-violin-and-strings-musical-instrument-in-image_3829261.jpg"class="image" width="300" height="350">
+                     <div class="overlay">
+                       <div class="text">place order</div>
+                     </div>
+                   </div></a></td>
+                   <td><a href="https://www.flipkart.com/search?q=drums&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><div class="container">
+                    <img src="images (3).jpeg"class="image" width="300" height="350">
+                         <div class="overlay">
+                           <div class="text">place order</div>
+                         </div></a>
+                       </div></td>
+    <caption>
+        <button class="book">ORDER NOW</button>
+      </caption>
+  </table>
+<nav>
+   <hr align="center"> </hr>
+   <p align="center" style="font-size:xx-large;">brands we sell</p>
+   <hr align="center"> </hr>
+   <table class="brand">
+<tr>
+  <td><a href="https://www.casio.com/in/electronic-musical-instruments/"><img src="Casio.png" alt="Casio"></a></td>
+  <td><a  href="https://www.hohner.de/en/instruments"><img src="Hohner.png" alt="Casio"></a></td>
+  <td><a href="https://www.philips.co.in/c-m-so/home-audio"><img src="Philips.png" alt="Casio"></a></td>
+  <td><a href="https://yamahamusicstore.in/?utm_source=google-ads&utm_campaign=20574879779&utm_adgroup={adgroup}&utm_term=&utm_device=c&utm_content=&gad=1&gclid=CjwKCAjwgsqoBhBNEiwAwe5w05VJD86IZ2_XibZkHLw4u6GfjzvzX3GiIGTKIgwg-_jjLLFjhZd-8xoC56oQAvD_BwE"><img src="Yamaha.png" alt="Casio"></a></td>
+  <td><a href="https://zoomcorp.com/en/us/"><img src="Zoom.png" alt="Casio"></a></td>
+  <td><a href="https://www.alesis.com/"><img src="Alesis.png" alt="Casio"></a></td>
+  <td><a href="https://www.prsformusic.com/join"><img src="PRS.png" alt="Casio"></a></td>
+  <td><a href="https://islandmusicco.com/levys/"><img src="Levys.png" alt="Casio"></a></td>
+  <td><a href="https://www.boseapac.com/en_in/index.html"><img src="Bose.png" alt="Casio"></a></td>
+</tr>
+<tr>
+  <td><a href="https://rajmusical.com/product-list.php?mid=185"><img src="Dean Markley.png" alt="Casio"></a></td>
+  <td><a href="https://digitech.com/"><img src="Digitech.png" alt="Casio"></a></td>
+  <td><a href="http://127.0.0.1:5500/error.html"><img src="ESP.png" alt="Casio"></a></td>
+  <td><a href="#"><img src="Hal Leonard.png" alt="Casio"></a></td>
+  <td><a href="#"><img src="Focusrite.png" alt="Casio"></a></td>
+  <td><a href="#"><img src="Ernie Ball.png" alt="Casio"></a></td>
+  <td><a href="#"><img src="Granada.png" alt="Casio"></a></td>
+  <td><a href="#"><img src="Logitech.png" alt="Casio"></a></td>
+  <td><a href="#"><img src="Orange.png" alt="Casio"></a></td>
+</tr>
+<tr>
+  <td><img src="Nux.png" alt="Casio"></td>
+  <td><img src="Pioneer.png" alt="Casio"></td>
+  <td><img src="Planet Waves.png" alt="Casio"></td>
+  <td><img src="Kayserbug.png" alt="Casio"></td>
+  <td><img src="IK Multimedia.png" alt="Casio"></td>
+  <td><img src="Roland.png" alt="Casio"></td>
+  <td><img src="Hidersine.png" alt="Casio"></td>
+  <td><img src="Le Bella.png" alt="Casio"></td>
+  <td><img src="PreSonus.png" alt="Casio"></td>
+</tr>
+
+   </table>
+          </nav><br><br>
+            <footer> <div class="first">
+              <a href="https://www.facebook.com/profile.php?id=100051244891396">
+              <div class="sprite_face_shift">
+              </div>
+              </a> 
+            
+              <div class="second">
+                <a href="https://www.instagram.com/_vip._.danush/">
+                <div class="sprite_face_shift_1">
+                </div>
+                </a></footer>
+
+</body>
+</html>
