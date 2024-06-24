@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: linear-gradient(to right, rgba(157, 0, 255, 0.771) , rgb(255, 185, 63),rgb(18, 250, 238));
+            width: 10%;;
+        }
+        .cards {
+  perspective: 1000cpx;
+  margin-left: 350%;
+  margin-top: 200%;
+  }
+
+.card {
+  width: 300px;
+  height: 150px;
+  background: #16161d;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .5s;
+  border-radius: 51px;
+background:transparent;
+box-shadow:  5px 5px 10px #343434,
+             -5px -5px 10px #2f2f2f;           
+}
+.card:hover {
+  transform: translateZ(50px) rotateX(50deg) rotateY(10deg);
+}
+.card_title {
+  color: #fff3f3;
+  position: relative;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
+  transition: transform .5s;
+  font: 700 1.5rem monospace;
+  text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     font-size:55px;
+}
+.card:hover .card_title {
+  transform: translateZ(50px);
+}
+      </style>
+</head>
+<body>
+  <div class="cards">
+    <figure class="card">
+        <figcaption class="card_title" id="txt"></figcaption>
+    </figure>
+</div>
+    <script>
+         function updateTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
